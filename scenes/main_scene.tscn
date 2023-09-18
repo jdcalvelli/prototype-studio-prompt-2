@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://b21hddgw1wutf"]
+[gd_scene load_steps=51 format=3 uid="uid://b21hddgw1wutf"]
 
 [ext_resource type="Texture2D" uid="uid://npg4pi4oecu2" path="res://assets/prototype 2 - krita/layer-exports/Background.PNG" id="1_5dtqo"]
 [ext_resource type="Script" path="res://scripts/main_scene.gd" id="1_516c3"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://cnl74vcyf2a8v" path="res://assets/prototype 2 - krita/layer-exports/bed.PNG" id="2_v5h4o"]
 [ext_resource type="Texture2D" uid="uid://bwv1ahydak6ph" path="res://assets/prototype 2 - krita/layer-exports/cassette player.PNG" id="3_icjjd"]
 [ext_resource type="Texture2D" uid="uid://bc8jsejsaxm1r" path="res://assets/prototype 2 - krita/layer-exports/person.PNG" id="4_l0jb3"]
+[ext_resource type="Texture2D" uid="uid://2wx2xvhy500e" path="res://assets/crackedopenpngs/Cracked_Open_01.png" id="5_8rtjq"]
 [ext_resource type="Script" path="res://scripts/Crack.gd" id="5_hj08j"]
 [ext_resource type="Texture2D" uid="uid://cl82k3b0j7dfi" path="res://assets/prototype 2 - krita/layer-exports/reel 1.PNG" id="5_t1mml"]
 [ext_resource type="Texture2D" uid="uid://d1oodleq7t3o" path="res://assets/crackedclosedpngs/Cracked_Closed_02.png" id="5_t1613"]
@@ -13,27 +14,41 @@
 [ext_resource type="Texture2D" uid="uid://flv8qqvlts66" path="res://assets/prototype 2 - krita/layer-exports/reel 2.PNG" id="6_rf4u8"]
 [ext_resource type="Texture2D" uid="uid://cb7br6k6anqbu" path="res://assets/crackedclosedpngs/Cracked_Closed_03.png" id="6_tyamn"]
 [ext_resource type="Script" path="res://scripts/Reel1.gd" id="6_yt7ps"]
+[ext_resource type="Texture2D" uid="uid://cisn6d5ara1mj" path="res://assets/crackedopenpngs/Cracked_Open_02.png" id="7_60jda"]
 [ext_resource type="Texture2D" uid="uid://doharedbqevlc" path="res://assets/crackedclosedpngs/Cracked_Closed_04.png" id="7_erlms"]
 [ext_resource type="Texture2D" uid="uid://dj7dnoim8snd4" path="res://assets/crackedclosedpngs/Cracked_Closed_05.png" id="8_8yq85"]
 [ext_resource type="Script" path="res://scripts/Reel2.gd" id="9_0wh70"]
 [ext_resource type="Texture2D" uid="uid://ujcxflpc3xcx" path="res://assets/crackedclosedpngs/Cracked_Closed_06.png" id="9_gvy72"]
+[ext_resource type="Texture2D" uid="uid://bp4jtq054avim" path="res://assets/crackedopenpngs/Cracked_Open_03.png" id="9_ttwei"]
 [ext_resource type="Texture2D" uid="uid://b7jppqeemws4c" path="res://assets/crackedclosedpngs/Cracked_Closed_07.png" id="10_apgit"]
 [ext_resource type="Texture2D" uid="uid://cxlseiuu5xsd3" path="res://assets/prototype 2 - krita/layer-exports/face 3 - 1.PNG" id="10_hqcx8"]
 [ext_resource type="Texture2D" uid="uid://dnbk8kt8sfhyb" path="res://assets/prototype 2 - krita/layer-exports/face 1.PNG" id="10_xcft0"]
 [ext_resource type="Texture2D" uid="uid://dw33unx8yssgl" path="res://assets/crackedclosedpngs/Cracked_Closed_08.png" id="11_cgyna"]
 [ext_resource type="Texture2D" uid="uid://30ur3de545t3" path="res://assets/prototype 2 - krita/layer-exports/face 3 - 2.PNG" id="11_rnd0w"]
+[ext_resource type="Texture2D" uid="uid://bflakl1pwb70f" path="res://assets/crackedopenpngs/Cracked_Open_04.png" id="11_ss23r"]
 [ext_resource type="Texture2D" uid="uid://cq1yhqxa88pcu" path="res://assets/crackedclosedpngs/Cracked_Closed_09.png" id="12_dgk2s"]
 [ext_resource type="Texture2D" uid="uid://cckm6tvyfrcei" path="res://assets/crackedclosedpngs/Cracked_Closed_10.png" id="13_4e83l"]
 [ext_resource type="Texture2D" uid="uid://cl0m2pni4vrkj" path="res://assets/prototype 2 - krita/layer-exports/face 2.PNG" id="13_77kd4"]
+[ext_resource type="Texture2D" uid="uid://rsejrcdrnld0" path="res://assets/crackedopenpngs/Cracked_Open_05.png" id="13_jj7oj"]
 [ext_resource type="Script" path="res://scripts/Face.gd" id="14_5ojmc"]
 [ext_resource type="Texture2D" uid="uid://c5ga6lbkdexx7" path="res://assets/crackedclosedpngs/Cracked_Closed_11.png" id="14_mq6pf"]
 [ext_resource type="Texture2D" uid="uid://diqjk4v6b4xes" path="res://assets/crackedclosedpngs/Cracked_Closed_12.png" id="15_0u7hu"]
+[ext_resource type="Texture2D" uid="uid://cxa66nagkxndb" path="res://assets/crackedopenpngs/Cracked_Open_06.png" id="15_yxhke"]
 [ext_resource type="AudioStream" uid="uid://cswjy81betaqh" path="res://audio/Dijon - Rodeo Clown (Official Audio).mp3" id="16_gjdku"]
 [ext_resource type="Texture2D" uid="uid://dsfix21xjdb5q" path="res://assets/crackedclosedpngs/Cracked_Closed_13.png" id="16_j2twk"]
 [ext_resource type="AudioStream" uid="uid://fixjcwo76fk0" path="res://audio/cassette hum.wav" id="17_176w7"]
+[ext_resource type="Texture2D" uid="uid://ctrw4c6dwtlq3" path="res://assets/crackedopenpngs/Cracked_Open_07.png" id="17_cr6if"]
 [ext_resource type="Texture2D" uid="uid://c06ih3as7ib" path="res://assets/crackedclosedpngs/Cracked_Closed_14.png" id="17_ykfo8"]
 [ext_resource type="Texture2D" uid="uid://c7lyqeo5j641i" path="res://assets/crackedclosedpngs/Cracked_Closed_15.png" id="18_dcdj8"]
 [ext_resource type="Texture2D" uid="uid://cwh4prtftr0b6" path="res://assets/crackedclosedpngs/Cracked_Closed_01.png" id="19_uwf0o"]
+[ext_resource type="Texture2D" uid="uid://cjk5v4f14yk6d" path="res://assets/crackedopenpngs/Cracked_Open_08.png" id="19_xqeo0"]
+[ext_resource type="Texture2D" uid="uid://c2xaewapibrwf" path="res://assets/crackedopenpngs/Cracked_Open_09.png" id="21_mfi25"]
+[ext_resource type="Texture2D" uid="uid://b4yubcm0x8jku" path="res://assets/crackedopenpngs/Cracked_Open_10.png" id="23_lxi3o"]
+[ext_resource type="Texture2D" uid="uid://3ltgrsato7b0" path="res://assets/crackedopenpngs/Cracked_Open_11.png" id="25_47d0r"]
+[ext_resource type="Texture2D" uid="uid://bo1gddm33evij" path="res://assets/crackedopenpngs/Cracked_Open_12.png" id="27_mm4eh"]
+[ext_resource type="Texture2D" uid="uid://bw8s1tkakmbxk" path="res://assets/crackedopenpngs/Cracked_Open_13.png" id="29_0cfpy"]
+[ext_resource type="Texture2D" uid="uid://dnrauohldqy3j" path="res://assets/crackedopenpngs/Cracked_Open_14.png" id="31_q4iw5"]
+[ext_resource type="Texture2D" uid="uid://d17qyovcrrhjn" path="res://assets/crackedopenpngs/Cracked_Open_15.png" id="33_1qibf"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_473gf"]
 animations = [{
@@ -84,78 +99,107 @@ texture = ExtResource("1_5dtqo")
 
 [node name="Crack1" type="Sprite2D" parent="Camera2D"]
 visible = false
-texture = ExtResource("19_uwf0o")
 script = ExtResource("5_hj08j")
+openSprite = ExtResource("5_8rtjq")
+closedSprite = ExtResource("19_uwf0o")
 
 [node name="Crack2" type="Sprite2D" parent="Camera2D"]
 visible = false
-texture = ExtResource("5_t1613")
 script = ExtResource("5_hj08j")
+openSprite = ExtResource("7_60jda")
+closedSprite = ExtResource("5_t1613")
+crackValue = 1
 
 [node name="Crack3" type="Sprite2D" parent="Camera2D"]
 visible = false
-texture = ExtResource("6_tyamn")
 script = ExtResource("5_hj08j")
+openSprite = ExtResource("9_ttwei")
+closedSprite = ExtResource("6_tyamn")
+crackValue = 2
 
 [node name="Crack4" type="Sprite2D" parent="Camera2D"]
 visible = false
-texture = ExtResource("7_erlms")
 script = ExtResource("5_hj08j")
+openSprite = ExtResource("11_ss23r")
+closedSprite = ExtResource("7_erlms")
+crackValue = 3
 
 [node name="Crack5" type="Sprite2D" parent="Camera2D"]
 visible = false
-texture = ExtResource("8_8yq85")
 script = ExtResource("5_hj08j")
+openSprite = ExtResource("13_jj7oj")
+closedSprite = ExtResource("8_8yq85")
+crackValue = 4
 
 [node name="Crack6" type="Sprite2D" parent="Camera2D"]
 visible = false
-texture = ExtResource("9_gvy72")
 script = ExtResource("5_hj08j")
+openSprite = ExtResource("15_yxhke")
+closedSprite = ExtResource("9_gvy72")
+crackValue = 5
 
 [node name="Crack7" type="Sprite2D" parent="Camera2D"]
 visible = false
-texture = ExtResource("10_apgit")
 script = ExtResource("5_hj08j")
+openSprite = ExtResource("17_cr6if")
+closedSprite = ExtResource("10_apgit")
+crackValue = 6
 
 [node name="Crack8" type="Sprite2D" parent="Camera2D"]
 visible = false
-texture = ExtResource("11_cgyna")
 script = ExtResource("5_hj08j")
+openSprite = ExtResource("19_xqeo0")
+closedSprite = ExtResource("11_cgyna")
+crackValue = 7
 
 [node name="Crack9" type="Sprite2D" parent="Camera2D"]
 visible = false
-texture = ExtResource("12_dgk2s")
 script = ExtResource("5_hj08j")
+openSprite = ExtResource("21_mfi25")
+closedSprite = ExtResource("12_dgk2s")
+crackValue = 8
 
 [node name="Crack10" type="Sprite2D" parent="Camera2D"]
 visible = false
-texture = ExtResource("13_4e83l")
 script = ExtResource("5_hj08j")
+openSprite = ExtResource("23_lxi3o")
+closedSprite = ExtResource("13_4e83l")
+crackValue = 9
 
 [node name="Crack11" type="Sprite2D" parent="Camera2D"]
 visible = false
-texture = ExtResource("14_mq6pf")
 script = ExtResource("5_hj08j")
+openSprite = ExtResource("25_47d0r")
+closedSprite = ExtResource("14_mq6pf")
+crackValue = 10
 
 [node name="Crack12" type="Sprite2D" parent="Camera2D"]
 visible = false
-texture = ExtResource("15_0u7hu")
 script = ExtResource("5_hj08j")
+openSprite = ExtResource("27_mm4eh")
+closedSprite = ExtResource("15_0u7hu")
+crackValue = 11
 
 [node name="Crack13" type="Sprite2D" parent="Camera2D"]
 visible = false
-texture = ExtResource("16_j2twk")
 script = ExtResource("5_hj08j")
+openSprite = ExtResource("29_0cfpy")
+closedSprite = ExtResource("16_j2twk")
+crackValue = 12
 
 [node name="Crack14" type="Sprite2D" parent="Camera2D"]
 visible = false
-texture = ExtResource("17_ykfo8")
 script = ExtResource("5_hj08j")
+openSprite = ExtResource("31_q4iw5")
+closedSprite = ExtResource("17_ykfo8")
+crackValue = 13
 
 [node name="Crack15" type="Sprite2D" parent="Camera2D"]
 visible = false
-texture = ExtResource("18_dcdj8")
 script = ExtResource("5_hj08j")
+openSprite = ExtResource("33_1qibf")
+closedSprite = ExtResource("18_dcdj8")
+crackValue = 14
 
 [node name="Bed" type="Sprite2D" parent="."]
 texture_filter = 1

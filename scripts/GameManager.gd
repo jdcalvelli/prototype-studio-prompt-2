@@ -16,12 +16,6 @@ func _ready():
 	# connect to signal
 	Events.changeScene.connect(_on_change_scene)
 
-func _process(delta):
-	# input check
-	for key in selectedKeyboardKeys:
-		if Input.is_key_pressed(key):
-			print(str(key) + " is held")
-			
 func _on_change_scene(nextScene : String):
 	match nextScene:
 		"intro":
