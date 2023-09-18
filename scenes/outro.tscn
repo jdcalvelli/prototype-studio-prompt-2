@@ -17,3 +17,25 @@ texture = ExtResource("1_bu2tl")
 stream = ExtResource("2_iod4b")
 volume_db = -5.0
 autoplay = true
+
+[node name="Control" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="Control"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 32
+text = "endurance"
+
+[node name="Label2" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 55.0
+offset_right = 188.0
+offset_bottom = 81.0
+text = "a prototype by jd calvelli"

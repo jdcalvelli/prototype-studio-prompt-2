@@ -8,24 +8,16 @@ var keyboardKeys = [
 
 var selectedKeyboardKeys = []
 
-var numKeysToSelect = 5
+var numKeysToSelect = 15
+
+var crackNumber = 0
 
 func _ready():
 	# connect to signal
 	Events.changeScene.connect(_on_change_scene)
-	
-	# this is to pick non repeating
-	var n = 0
-	while n < numKeysToSelect:
-		var keyToAdd = keyboardKeys.pick_random()
-		if selectedKeyboardKeys.has(keyToAdd):
-			continue
-		else:
-			selectedKeyboardKeys.append(keyToAdd)
-			n += 1
-	print(selectedKeyboardKeys)
 
 func _process(delta):
+	# input check
 	for key in selectedKeyboardKeys:
 		if Input.is_key_pressed(key):
 			print(str(key) + " is held")
@@ -36,6 +28,16 @@ func _on_change_scene(nextScene : String):
 			get_tree().change_scene_to_file("res://scenes/intro.tscn")
 		"main":
 			get_tree().change_scene_to_file("res://scenes/main_scene.tscn")
+				# this is to pick non repeating
+			var n = 0
+			while n < numKeysToSelect:
+				var keyToAdd = keyboardKeys.pick_random()
+				if selectedKeyboardKeys.has(keyToAdd):
+					continue
+				else:
+					selectedKeyboardKeys.append(keyToAdd)
+					n += 1
+			print(selectedKeyboardKeys)
 		"outro":
 			get_tree().change_scene_to_file("res://scenes/outro.tscn")
 	

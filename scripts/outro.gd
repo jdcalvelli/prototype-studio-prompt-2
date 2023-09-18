@@ -7,6 +7,7 @@ func _ready():
 	
 func _on_cassette_off():
 	restartable = true
+	$Control.visible = true
 
 func _process(delta):
 	if Input.is_key_pressed(KEY_R) and restartable:
