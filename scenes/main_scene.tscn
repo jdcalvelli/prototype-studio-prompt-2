@@ -1,6 +1,7 @@
-[gd_scene load_steps=18 format=3 uid="uid://b21hddgw1wutf"]
+[gd_scene load_steps=20 format=3 uid="uid://b21hddgw1wutf"]
 
 [ext_resource type="Texture2D" uid="uid://npg4pi4oecu2" path="res://assets/prototype 2 - krita/layer-exports/Background.PNG" id="1_5dtqo"]
+[ext_resource type="Script" path="res://scripts/main_scene.gd" id="1_516c3"]
 [ext_resource type="Script" path="res://scripts/Camera2D.gd" id="1_d22u5"]
 [ext_resource type="Texture2D" uid="uid://cnl74vcyf2a8v" path="res://assets/prototype 2 - krita/layer-exports/bed.PNG" id="2_v5h4o"]
 [ext_resource type="Texture2D" uid="uid://bwv1ahydak6ph" path="res://assets/prototype 2 - krita/layer-exports/cassette player.PNG" id="3_icjjd"]
@@ -16,6 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://cl0m2pni4vrkj" path="res://assets/prototype 2 - krita/layer-exports/face 2.PNG" id="13_77kd4"]
 [ext_resource type="Script" path="res://scripts/Face.gd" id="14_5ojmc"]
 [ext_resource type="AudioStream" uid="uid://cswjy81betaqh" path="res://audio/Dijon - Rodeo Clown (Official Audio).mp3" id="16_gjdku"]
+[ext_resource type="AudioStream" uid="uid://fixjcwo76fk0" path="res://audio/cassette hum.wav" id="17_176w7"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_473gf"]
 animations = [{
@@ -48,6 +50,7 @@ animations = [{
 }]
 
 [node name="MainScene" type="Node2D"]
+script = ExtResource("1_516c3")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(93, -57)
@@ -103,7 +106,12 @@ sprite_frames = SubResource("SpriteFrames_473gf")
 animation = &"neutral"
 script = ExtResource("14_5ojmc")
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="Dijon" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("16_gjdku")
-volume_db = -2.0
+volume_db = -6.0
+autoplay = true
+
+[node name="CassetteHum" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("17_176w7")
+volume_db = -5.0
 autoplay = true

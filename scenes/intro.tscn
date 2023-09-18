@@ -1,0 +1,29 @@
+[gd_scene load_steps=6 format=3 uid="uid://b7i0wcbe356fc"]
+
+[ext_resource type="Script" path="res://scripts/intro.gd" id="1_1vya8"]
+[ext_resource type="Texture2D" uid="uid://npg4pi4oecu2" path="res://assets/prototype 2 - krita/layer-exports/Background.PNG" id="1_s2adx"]
+[ext_resource type="AudioStream" uid="uid://cxdxdpribkbwe" path="res://audio/383774__deleted_user_7146007__laying-down-on-getting-off-of-creaky-bed.wav" id="2_1vl15"]
+[ext_resource type="AudioStream" uid="uid://b5du0tdf023bb" path="res://audio/680834__not_yr__cassette-box-cassette-case.wav" id="3_286sg"]
+[ext_resource type="AudioStream" uid="uid://b317mlayaq7lv" path="res://audio/cassette on.wav" id="4_686if"]
+
+[node name="intro" type="Node2D"]
+script = ExtResource("1_1vya8")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+self_modulate = Color(0, 0, 0, 1)
+texture = ExtResource("1_s2adx")
+
+[node name="GettingInBed" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_1vl15")
+volume_db = -6.0
+autoplay = true
+
+[node name="FumbleWithCassette" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_286sg")
+volume_db = -6.0
+
+[node name="HitPlay" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_686if")
+volume_db = -5.0
