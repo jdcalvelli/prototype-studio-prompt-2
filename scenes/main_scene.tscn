@@ -1,0 +1,109 @@
+[gd_scene load_steps=18 format=3 uid="uid://b21hddgw1wutf"]
+
+[ext_resource type="Texture2D" uid="uid://npg4pi4oecu2" path="res://assets/prototype 2 - krita/layer-exports/Background.PNG" id="1_5dtqo"]
+[ext_resource type="Script" path="res://scripts/Camera2D.gd" id="1_d22u5"]
+[ext_resource type="Texture2D" uid="uid://cnl74vcyf2a8v" path="res://assets/prototype 2 - krita/layer-exports/bed.PNG" id="2_v5h4o"]
+[ext_resource type="Texture2D" uid="uid://bwv1ahydak6ph" path="res://assets/prototype 2 - krita/layer-exports/cassette player.PNG" id="3_icjjd"]
+[ext_resource type="Texture2D" uid="uid://bc8jsejsaxm1r" path="res://assets/prototype 2 - krita/layer-exports/person.PNG" id="4_l0jb3"]
+[ext_resource type="Texture2D" uid="uid://cl82k3b0j7dfi" path="res://assets/prototype 2 - krita/layer-exports/reel 1.PNG" id="5_t1mml"]
+[ext_resource type="Script" path="res://scripts/rotator.gd" id="6_px3xt"]
+[ext_resource type="Texture2D" uid="uid://flv8qqvlts66" path="res://assets/prototype 2 - krita/layer-exports/reel 2.PNG" id="6_rf4u8"]
+[ext_resource type="Script" path="res://scripts/Reel1.gd" id="6_yt7ps"]
+[ext_resource type="Script" path="res://scripts/Reel2.gd" id="9_0wh70"]
+[ext_resource type="Texture2D" uid="uid://cxlseiuu5xsd3" path="res://assets/prototype 2 - krita/layer-exports/face 3 - 1.PNG" id="10_hqcx8"]
+[ext_resource type="Texture2D" uid="uid://dnbk8kt8sfhyb" path="res://assets/prototype 2 - krita/layer-exports/face 1.PNG" id="10_xcft0"]
+[ext_resource type="Texture2D" uid="uid://30ur3de545t3" path="res://assets/prototype 2 - krita/layer-exports/face 3 - 2.PNG" id="11_rnd0w"]
+[ext_resource type="Texture2D" uid="uid://cl0m2pni4vrkj" path="res://assets/prototype 2 - krita/layer-exports/face 2.PNG" id="13_77kd4"]
+[ext_resource type="Script" path="res://scripts/Face.gd" id="14_5ojmc"]
+[ext_resource type="AudioStream" uid="uid://cswjy81betaqh" path="res://assets/Dijon - Rodeo Clown (Official Audio).mp3" id="16_gjdku"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_473gf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_hqcx8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_rnd0w")
+}],
+"loop": true,
+"name": &"crying",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_xcft0")
+}],
+"loop": true,
+"name": &"neutral",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_77kd4")
+}],
+"loop": true,
+"name": &"sad",
+"speed": 5.0
+}]
+
+[node name="MainScene" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(93, -57)
+ignore_rotation = false
+script = ExtResource("1_d22u5")
+rotationSpeed = 180
+zoomSpeed = 180
+
+[node name="Background" type="Sprite2D" parent="Camera2D"]
+texture_filter = 1
+position = Vector2(2.08165e-12, 2.08165e-12)
+texture = ExtResource("1_5dtqo")
+
+[node name="Bed" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("2_v5h4o")
+
+[node name="CassettePlayer" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(2.08165e-12, 2.08165e-12)
+texture = ExtResource("3_icjjd")
+
+[node name="Person" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(2.08165e-12, 2.08165e-12)
+texture = ExtResource("4_l0jb3")
+
+[node name="Reel1" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(15, 38)
+texture = ExtResource("5_t1mml")
+offset = Vector2(-15, -38)
+script = ExtResource("6_yt7ps")
+
+[node name="Rotator" type="Node" parent="Reel1"]
+script = ExtResource("6_px3xt")
+rotationSpeed = 4
+
+[node name="Reel2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-14, 53)
+texture = ExtResource("6_rf4u8")
+offset = Vector2(14, -53)
+script = ExtResource("9_0wh70")
+
+[node name="Rotator" type="Node" parent="Reel2"]
+script = ExtResource("6_px3xt")
+rotationSpeed = 4
+
+[node name="Face" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_473gf")
+animation = &"neutral"
+script = ExtResource("14_5ojmc")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("16_gjdku")
+volume_db = -2.0
+autoplay = true
