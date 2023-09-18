@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cswjy81betaqh"
+path="res://.godot/imported/Dijon - Rodeo Clown (Official Audio).mp3-82c5aa71b0e2a3f1a02de18a43344c3b.mp3str"
+
+[deps]
+
+source_file="res://audio/Dijon - Rodeo Clown (Official Audio).mp3"
+dest_files=["res://.godot/imported/Dijon - Rodeo Clown (Official Audio).mp3-82c5aa71b0e2a3f1a02de18a43344c3b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
