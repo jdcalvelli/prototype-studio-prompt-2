@@ -7,6 +7,7 @@ func _ready():
 	
 func _on_cassette_off():
 	restartable = true
+	$Cracks.visible = false
 	$Control.visible = true
 
 func _process(delta):
