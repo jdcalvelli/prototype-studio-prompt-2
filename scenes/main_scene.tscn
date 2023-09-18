@@ -15,7 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://30ur3de545t3" path="res://assets/prototype 2 - krita/layer-exports/face 3 - 2.PNG" id="11_rnd0w"]
 [ext_resource type="Texture2D" uid="uid://cl0m2pni4vrkj" path="res://assets/prototype 2 - krita/layer-exports/face 2.PNG" id="13_77kd4"]
 [ext_resource type="Script" path="res://scripts/Face.gd" id="14_5ojmc"]
-[ext_resource type="AudioStream" uid="uid://cswjy81betaqh" path="res://assets/Dijon - Rodeo Clown (Official Audio).mp3" id="16_gjdku"]
+[ext_resource type="AudioStream" uid="uid://cswjy81betaqh" path="res://audio/Dijon - Rodeo Clown (Official Audio).mp3" id="16_gjdku"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_473gf"]
 animations = [{
